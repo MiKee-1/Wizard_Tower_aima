@@ -17,7 +17,7 @@ public class WizardTower {
         System.out.println("\nInserire il nome del file contenente la griglia:");
         String file=reader.readLine();
         
-        Tower tower = loadTower("/home/mike/Desktop/fondamenti_IA/lab_aima/wizardtower_java/wizardtower_java/"+file);    
+        Tower tower = loadTower("path/to/iwt__.txt");    
         Problem problem = new Problem(
             tower.getInitialState(),
             new WizardSuccessorFunction(tower),
